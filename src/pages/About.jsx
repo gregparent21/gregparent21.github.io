@@ -3,7 +3,7 @@ export default function About() {
 		<section className="prose max-w-3xl">
 			<h1>About</h1>
 			<p>
-				I'm Gregory — a front-end developer focused on building performant,
+				I'm Greg — a front-end developer focused on building performant,
 				accessible, and maintainable web applications. I enjoy working across
 				the stack to ship features end-to-end, with an emphasis on UX and
 				developer experience.
