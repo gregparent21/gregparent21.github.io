@@ -83,7 +83,7 @@ export const projects = [
     media: [
       {
         type: 'video',
-        src: '/images/2110demo.mov',
+        src: '/images/output.mp4',
         caption: 'Project Demo - Point to Point and Smart Select'
       }
     ]
