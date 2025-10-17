@@ -69,6 +69,29 @@ export default function Projects() {
               <h3 className="text-xl font-semibold mb-2">About this project</h3>
               <p className="mb-4">{project.longDesc ?? "Add a longer description for this project in src/data/projects.js using the `longDesc` field."}</p>
             </section>
+            {/* Inline media block (images/videos) */}
+            {project.media && project.media.length > 0 && (
+              <section className="mt-6">
+                <h3 className="text-xl font-semibold mb-3">Media</h3>
+                <div className="space-y-4">
+                  {project.media.map((m, idx) => (
+                    <div key={idx} className="rounded overflow-hidden">
+                      {m.type === 'image' && (
+                        <img src={m.src} alt={m.alt ?? project.title} className="w-full max-h-[480px] object-cover rounded" />
+                      )}
+
+                      {m.type === 'video' && (
+                        <video key={m.src || idx} controls poster={m.poster} className="w-full rounded" src={m.src} preload="metadata" playsInline>
+                          Your browser does not support the video tag.
+                        </video>
+                      )}
+
+                      {m.caption && <div className="text-sm text-gray-600 mt-2">{m.caption}</div>}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
           </article>
         </div>
       </div>
