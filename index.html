@@ -1,13 +1,791 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gregparent21.github.io</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gregory Parent</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icons/website-logo.png" type="image/png" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Header -->
+    <header
+      class="text-center d-flex align-items-center justify-content-center position-relative"
+    >
+      <div class="container">
+        <h1 class="display-1 hero-title"><em>Gregory Parent</em></h1>
+        <p class="display-5 sans-serif-light hero-subtitle">
+          CS Major @ Cornell
+        </p>
+
+        <!-- Resume Button -->
+        <a href="resume.pdf" target="_blank">
+          <button
+            type="button"
+            id="resumeButton"
+            class="btn btn-outline-dark btn-lg mt-4 sans-serif-light"
+          >
+            Resume
+          </button>
+        </a>
+      </div>
+
+      <div class="scroll-down position-absolute" style="bottom: 20px">
+          <img src="images/chevron-down.svg" alt="Scroll Down" class="img-fluid" />
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-dark navbar-expand-lg border-body custom-navbar sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="#">Gregory Parent</a>
+        <button
+          class="navbar-toggler navbar-dark custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon custom-toggler"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="mailto:gmp89@cornell.edu"
+                target="_blank"
+              >
+                <img src="images/mail-icon.svg" alt="Email" class="contact-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/gregparent21"
+                target="_blank"
+              >
+                <img src="images/github-icon.svg" alt="GitHub" class="contact-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/gregory-parent/"
+                target="_blank"
+              >
+                <img
+                  src="images/linkedin-icon.svg"
+                  alt="LinkedIn"
+                  class="contact-icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <a class="navbar-brand mx-auto d-none d-lg-block" href="#"
+            >Gregory Parent</a
+          >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="row align-items-center">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img
+            src="images/profile-pic.jpg"
+            alt="Gregory Parent"
+            class="img-fluid profile-image"
+          />
+        </div>
+        <div class="col-md-8 ms-md-5 mt-4 mt-md-0">
+          <h2 class="mb-4 serif-regular">
+            Hi, I'm Greg, a Computer Science major at Cornell University.
+          </h2>
+          <div class="sans-serif-light">
+            <p>
+              I am a junior at Cornell's College of Engineering, with a passion for comptuer science,
+              programming, and AI. I have experience programming in Python, Java, and SQL for backend 
+              develeopment, as well as using JavaScript with 
+              React Native for frontend development. I love working on personal projets. Currently I am 
+              having fun exploring machine learning models. At Cornell, I am the president of Kappa Theta Pi, Cornell's 
+              first professional co-ed Technology Fraternity, as well as heavily involved in the Cornell FinTech Club.
+
+              <br /><br />
+              For fun, I enjoy playing the keyboard in a band with my friends, working out, and all things film. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="text-center mb-5 serif-regular"><em>Experience</em></h2>
+        <div class="timeline">
+          <!-- Experience 1 - Cornell TA -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="logos/cornell-logo.png"
+                      alt="Cornell University"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title">Teaching Assistant | CS 4820/5820 - Introduction to Analysis of Algorithms</h3>
+                    <h4 class="company-name">
+                      Cornell University | Bowers College of Computing and Information Science
+                    </h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">May 2026 - Present</span>
+                    <span class="location">Ithaca, NY</span>
+                  </div>
+                  <p class="experience-description">
+                    Personally selected to serve as a TA for Cornell's combined undergraduate and graduate-level algorithms course. I will be responsible for leading a weekly 20+ student discussion section, grading homework and exams, and providing feedback on proof-based algorithm design in office hours.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Java</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <!-- Experience 2 - Jahnel Group -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="logos/jahnelgroup_logo.jpeg"
+                      alt="Jahnel Group"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title">
+                      Software Engineer Intern
+                    </h3>
+                    <h4 class="company-name">
+                      Jahnel Group
+                    </h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">June 2026 - Aug 2026</span>
+                    <span class="location">Schenectady, NY</span>
+                  </div>
+                  <p class="experience-description">
+                    Incoming Software 
+                    Engineer Intern. Will develop RAG tools to improve internal knowledge
+                    retrieval through LLM-powered search, embeddings, and document indexing pipelines.
+                    Will additionally build tools to streamline client discovery.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">MySQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <!-- Experience 3 -  Widget Factory -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="logos/idler-logo.png"
+                      alt="Idler / Widget Factory"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title"> AI Problem Design & Quality Assurance Engineer</h3>
+                    <h4 class="company-name">Idler / Widget Factory (YC Summer 25)</h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">February 2026 - Present</span>
+                    <span class="location">Remote</span>
+                  </div>
+                  <p class="experience-description">
+                    Designed programming and reasoning problems 
+                    to evaluate the accuracy and robustness of Idler's AI models. I analyzed their model's 
+                    outputs against reference solutions in order to identify failure patterns and 
+                    translate those findings into feedback to further improve model 
+                    performance.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <!-- Experience 4 -  IXL  -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="logos/ixl-logo.jpeg"
+                      alt="IXL Center"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title">Technology & Digital Consultant Intern</h3>
+                    <h4 class="company-name">IXL Center - Center for Innovation, Excellence and Leadership</h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">March 2025 - May 2025</span>
+                    <span class="location">Remote</span>
+                  </div>
+                  <p class="experience-description">
+                    As a student consultant for IXL Center’s Digital Acceleration Program, 
+                    I developed a digital optimization roadmap for a small-business client 
+                    by auditing website UX, SEO structure, accessibility, scalability, and 
+                    conversion gaps. Our team translated business needs into actionable, 
+                    data-driven recommendations and ranked #1 weekly among 35+ consultant 
+                    teams.
+                  </p>
+                  <div class="tech-stack">
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="text-center mb-5 serif-regular"><em>Projects</em></h2>
+      <div class="row g-4">
+        <!-- Project 1 - Cornell Terminal -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://www.youtube.com/watch?v=uSrVDuZjRJk">Cornell Terminal</a>
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Multi-Agent Research, Analyst, and Trading Platform for the Cornell FinTech Club in collaboration with Millennium Management
+              </h6>
+              <p class="card-date text-muted"><em>September 2025 - May 2026</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="images/cft_x_mlp_image.png"
+                  class="card-img-top img-fluid"
+                  alt="Cornell Terminal"
+                />
+              </div>
+              <p class="card-text">
+                Worked with 3 other programmers to build 
+                a multi-agent finance platform for Cornell FinTech Club and 
+                Millennium Management using Python, LangGraph, and Supabase, enabling 
+                natural language ticker queries to generate company research,
+                 DCF/comps valuations, risk scores, trade recommendations, and 
+                 Alpaca paper-trading backtests. Presented project in person to team of
+                 full-time senior engineers. 
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text"
+                  >Python, TypeScript, SupaBase, LangGraph, LangChain </span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 - School Scout -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="google.com"
+                  >School Scout
+                  <span style="font-size: 1.5rem; color: #687079"
+                    >(Click Me!)</span
+                  ></a
+                >
+              </h5>
+              <h6 class="card-subtitle text-muted">RAG-based college search platform </h6>
+              <p class="card-date text-muted"><em>February 2026 - May 2026</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="images/school-scout_image.png"
+                  class="card-img-top img-fluid"
+                  alt="School Scout"
+                />
+              </div>
+              <p class="card-text">
+                Developed School Scout, a RAG-based college search platform that
+                 combines scraped Niche.com review data, SVD/vector retrieval, 
+                 structured filters, and an interactive map interface to rank 
+                 schools from natural-language queries. Built a SQLite database to 
+                 store the Niche.com review data through BeautifulSoup web scraping
+                 across 500+ universities and colleges.
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text"
+                  >Python, JavaScript, React, SQL, SQLite, Docker, NumPy, Pandas</span
+                ><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 - Personal Website -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://github.com/gregparent21/gregparent21.github.io"
+                  >Personal Website</a
+                >
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Personal Website to display portfolio, resume, and work experience 
+              </h6>
+              <p class="card-date text-muted"><em>August 2025 - Current</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="images/website_image.png"
+                  class="card-img-top img-fluid"
+                  alt="Personal Website Portfolio"
+                />
+              </div>
+              <p class="card-text">
+                Designed and developed a responsive personal portfolio website using HTML and CSS
+                 to showcase my projects, technical experience, resume, and contact information 
+                 through a clean, accessible interface.
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text">HTML, CSS</span><br />
+                
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 - Portfolio Optimizer -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://youtu.be/I9aEHHa18fY">Portfolio Optimizer</a>
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Portfolio Optimizer
+              </h6>
+              <p class="card-date text-muted"><em>January 2025 - May 2025</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="images/port-opt-image.png"
+                  class="card-img-top img-fluid"
+                  alt="Port Opt"
+                />
+              </div>
+              <p class="card-text">
+                Led backend development for a portfolio optimization platform using Python,
+                 Flask, PostgreSQL, yfinance, and BeautifulSoup, scraping top GICS-sector tickers,
+                  storing 1M+ OHLC records, and enabling real-time analysis and optimization across 
+                  500+ stocks. User enters their current portfolio, as well as survey answers regarding
+                  preferred sectors, comfort with risk, and investment time horizon to determine optimization method.
+                <br /><br /><br />
+                Tech Stack: <span class="light-bold-text">Python, PostgreSQL, JavaScript, TypeScript, Firebase</span
+                ><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 - CamlShop -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://www.youtube.com/watch?v=EQ_Qw3f65I8&list=LL&index=34">CamlShop</a>
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Image editing tool built entirely with OCaml
+              </h6>
+              <p class="card-date text-muted"><em>October 2025 - December 2025</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="images/camlshop-image.png"
+                  class="card-img-top img-fluid"
+                  alt="CamlShop"
+                />
+              </div>
+              <p class="card-text">
+                Built an OCaml-based image editing application with support for color filters, 
+                rotation, mirroring, cropping, cut-and-paste editing, and file saving. The project 
+                emphasized functional programming design, image manipulation algorithms, and a clean 
+                user workflow for loading, editing, and exporting images.
+
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text">OCaml</span><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 - AstraGlyph -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://astgra-glyph.vercel.app/">AstraGlyph</a></h5>
+              <p class="card-date text-muted"><em>April 2026 - May 2026</em></p>
+              <h6 class="card-subtitle text-muted">
+                Translation tool for my own invented language
+              </h6>
+              <div class="custom-image-container container">
+                <img
+                  src="images/astraglyph-image.png"
+                  class="card-img-top img-fluid"
+                  alt="AstraGlyph"
+                />
+              </div>
+              <p class="card-text">
+                Final project for Cornell's ARKEO 2812: Hieroglyphics to HTML - A History of Writing Systems.
+                Opted to create my own language and went above expectations by building my own translation 
+                platform to translate English text into my script in real time. Language consists of both
+                phonetic letters and logograms. Translation works by breaking down English words into phonetic
+                chunks to decide which character to substitute. 
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text"
+                  >JavaScript, React Native</span
+                ><br /> <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="skills">
+      <h2 class="text-center mb-5" style="color: var(--background-color)">
+        <em>Technical Skills</em>
+      </h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <h5 class="mb-3">Languages</h5>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/python-icon.svg"
+                  alt="Python"
+                  class="img-fluid"
+                />
+                <p>Python</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/java-icon.svg"
+                  alt="Java"
+                  class="img-fluid"
+                />
+                <p>Java</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/javascript-icon.svg"
+                  alt="JavaScript"
+                  class="img-fluid"
+                />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/sql-icon-bw.jpg"
+                  alt="SQL"
+                  class="img-fluid"
+                />
+                <p>SQL</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/html-icon.svg"
+                  alt="HTML"
+                  class="img-fluid"
+                />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/ocaml-icon.webp"
+                  alt="OCaml"
+                  class="img-fluid"
+                />
+                <p>OCaml</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Frameworks</h5>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/react-icon.svg"
+                  alt="React"
+                  class="img-fluid"
+                />
+                <p>React</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/langchain-icon.webp"
+                  alt="LangChain / LangGraph"
+                  class="img-fluid"
+                />
+                <p>LangChain</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/flask-icon.webp"
+                  alt="Flask"
+                  class="img-fluid"
+                />
+                <p>Flask</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/numpy-icon.webp"
+                  alt="NumPy"
+                  class="img-fluid"
+                />
+                <p>NumPy</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/pandas-icon.webp"
+                  alt="Pandas"
+                  class="img-fluid"
+                />
+                <p>Pandas</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/pytorch.png"
+                  alt="PyTorch"
+                  class="img-fluid"
+                />
+                <p>PyTorch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Tools & Databases</h5>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/git-icon.svg"
+                  alt="Git"
+                  class="img-fluid"
+                />
+                <p>Git</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/sqlite-icon.webp"
+                  alt="SQLite"
+                  class="img-fluid"
+                />
+                <p>SQLite</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/docker-icon.svg"
+                  alt="Docker"
+                  class="img-fluid"
+                />
+                <p>Docker</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/postgres-logo.jpg"
+                  alt="PostgreSQL"
+                  class="img-fluid"
+                />
+                <p>PostgreSQL</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/mongodb-icon.svg"
+                  alt="MongoDB"
+                  class="img-fluid"
+                />
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="icons/firebase-icon.svg"
+                  alt="Firebase"
+                  class="img-fluid"
+                />
+                <p>Firebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Gregory Parent</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Modal Image -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.getElementsByClassName("custom-close")[0];
+        const navbar = document.querySelector(".navbar");
+
+        document
+          .querySelectorAll("#projects .custom-image-container img")
+          .forEach((img) => {
+            img.addEventListener("click", function () {
+              modal.style.display = "flex";
+              modalImg.src = this.src;
+              navbar.classList.add("navbar-hidden");
+            });
+          });
+
+        closeBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+          navbar.classList.remove("navbar-hidden");
+        });
+
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+            navbar.classList.remove("navbar-hidden");
+          }
+        });
+      });
+    </script>
+    <div id="imageModal" class="modal">
+      <span class="custom-close">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Zoomed Image" />
+      </div>
+    </div>
   </body>
 </html>
