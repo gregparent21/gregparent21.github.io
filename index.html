@@ -1,14 +1,791 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gregparent21.github.io</title>
-    <script type="module" crossorigin src="/assets/index-DjZfB3JW.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CJmqDqsf.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gregory Parent</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/assets/website-logo-Bv9ge4HS.png" type="image/png" />
+    <link rel="stylesheet" crossorigin href="/assets/index--zUfixZv.css">
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Header -->
+    <header
+      class="text-center d-flex align-items-center justify-content-center position-relative"
+    >
+      <div class="container">
+        <h1 class="display-1 hero-title"><em>Gregory Parent</em></h1>
+        <p class="display-5 sans-serif-light hero-subtitle">
+          CS Major @ Cornell
+        </p>
+
+        <!-- Resume Button -->
+        <a href="resume.pdf" target="_blank">
+          <button
+            type="button"
+            id="resumeButton"
+            class="btn btn-outline-dark btn-lg mt-4 sans-serif-light"
+          >
+            Resume
+          </button>
+        </a>
+      </div>
+
+      <div class="scroll-down position-absolute" style="bottom: 20px">
+          <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-chevron-down'%20viewBox='0%200%2016%2016'%3e%3cpath%20fill-rule='evenodd'%20d='M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708'/%3e%3c/svg%3e" alt="Scroll Down" class="img-fluid" />
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-dark navbar-expand-lg border-body custom-navbar sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="#">Gregory Parent</a>
+        <button
+          class="navbar-toggler navbar-dark custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon custom-toggler"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="mailto:gmp89@cornell.edu"
+                target="_blank"
+              >
+                <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='Layer_1'%20xmlns:x='ns_extend;'%20xmlns:i='ns_ai;'%20xmlns:graph='ns_graphs;'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2074.6%2056'%20style='enable-background:new%200%200%2074.6%2056;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23f1f1f1;}%20.st1{fill:%23f1f1f1;}%20.st2{fill:%23f1f1f1;}%20.st3{fill:%23f1f1f1;}%20.st4{fill:%23f1f1f1;}%20%3c/style%3e%3cmetadata%3e%3csfw%20xmlns='ns_sfw;'%3e%3cslices%3e%3c/slices%3e%3csliceSourceBounds%20bottomLeftOrigin='true'%20height='56'%20width='74.6'%20x='-176.8'%20y='-303.4'%3e%3c/sliceSourceBounds%3e%3c/sfw%3e%3c/metadata%3e%3cg%3e%3cg%3e%3cpath%20class='st0'%20d='M5.1,56H17V27.2L0,14.4v36.5C0,53.7,2.3,56,5.1,56'%3e%3c/path%3e%3cpath%20class='st1'%20d='M57.7,56h11.9c2.8,0,5.1-2.3,5.1-5.1V14.4l-17,12.7'%3e%3c/path%3e%3cpath%20class='st2'%20d='M57.7,5.1v22.1l17-12.7V7.6c0-6.3-7.2-9.9-12.2-6.1'%3e%3c/path%3e%3cpath%20class='st3'%20d='M17,27.2V5.1l20.4,15.3L57.7,5.1v22.1L37.3,42.4'%3e%3c/path%3e%3cpath%20class='st4'%20d='M0,7.6v6.8l17,12.7V5.1l-4.8-3.6C7.2-2.2,0,1.4,0,7.6'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Email" class="contact-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/gregparent21"
+                target="_blank"
+              >
+                <img src="data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%23f1f1f1'/%3e%3c/svg%3e" alt="GitHub" class="contact-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/gregory-parent/"
+                target="_blank"
+              >
+                <img
+                  src="data:image/svg+xml,%3csvg%20id='Group_1282'%20data-name='Group%201282'%20xmlns='http://www.w3.org/2000/svg'%20width='76.624'%20height='65.326'%20viewBox='0%200%2076.624%2065.326'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cpath%20id='Path_2520'%20data-name='Path%202520'%20d='M958.98,112.559h-9.6V97.525c0-3.585-.064-8.2-4.993-8.2-5,0-5.765,3.906-5.765,7.939v15.294h-9.6V81.642h9.216v4.225h.129a10.1,10.1,0,0,1,9.093-4.994c9.73,0,11.524,6.4,11.524,14.726ZM918.19,77.416a5.571,5.571,0,1,1,5.57-5.572,5.571,5.571,0,0,1-5.57,5.572m4.8,35.143h-9.61V81.642h9.61Zm40.776-55.2h-55.21a4.728,4.728,0,0,0-4.781,4.67v55.439a4.731,4.731,0,0,0,4.781,4.675h55.21a4.741,4.741,0,0,0,4.8-4.675V62.025a4.738,4.738,0,0,0-4.8-4.67'%20transform='translate(-903.776%20-57.355)'%20fill='%23f1f1f1'%3e%3c/path%3e%3c/svg%3e"
+                  alt="LinkedIn"
+                  class="contact-icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <a class="navbar-brand mx-auto d-none d-lg-block" href="#"
+            >Gregory Parent</a
+          >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="row align-items-center">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img
+            src="/assets/profile-pic-DSTv7JHa.jpg"
+            alt="Gregory Parent"
+            class="img-fluid profile-image"
+          />
+        </div>
+        <div class="col-md-8 ms-md-5 mt-4 mt-md-0">
+          <h2 class="mb-4 serif-regular">
+            Hi, I'm Greg, a Computer Science major at Cornell University.
+          </h2>
+          <div class="sans-serif-light">
+            <p>
+              I am a junior at Cornell's College of Engineering, with a passion for comptuer science,
+              programming, and AI. I have experience programming in Python, Java, and SQL for backend 
+              develeopment, as well as using JavaScript with 
+              React Native for frontend development. I love working on personal projets. Currently I am 
+              having fun exploring machine learning models. At Cornell, I am the president of Kappa Theta Pi, Cornell's 
+              first professional co-ed Technology Fraternity, as well as heavily involved in the Cornell FinTech Club.
+
+              <br /><br />
+              For fun, I enjoy playing the keyboard in a band with my friends, working out, and all things film. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="text-center mb-5 serif-regular"><em>Experience</em></h2>
+        <div class="timeline">
+          <!-- Experience 1 - Cornell TA -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="/assets/cornell-logo-CH2ISzvj.png"
+                      alt="Cornell University"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title">Teaching Assistant | CS 4820/5820 - Introduction to Analysis of Algorithms</h3>
+                    <h4 class="company-name">
+                      Cornell University | Bowers College of Computing and Information Science
+                    </h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">May 2026 - Present</span>
+                    <span class="location">Ithaca, NY</span>
+                  </div>
+                  <p class="experience-description">
+                    Personally selected to serve as a TA for Cornell's combined undergraduate and graduate-level algorithms course. I will be responsible for leading a weekly 20+ student discussion section, grading homework and exams, and providing feedback on proof-based algorithm design in office hours.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Java</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <!-- Experience 2 - Jahnel Group -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="/assets/jahnelgroup_logo-CdQjtkbM.jpeg"
+                      alt="Jahnel Group"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title">
+                      Software Engineer Intern
+                    </h3>
+                    <h4 class="company-name">
+                      Jahnel Group
+                    </h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">June 2026 - Aug 2026</span>
+                    <span class="location">Schenectady, NY</span>
+                  </div>
+                  <p class="experience-description">
+                    Incoming Software 
+                    Engineer Intern. Will develop RAG tools to improve internal knowledge
+                    retrieval through LLM-powered search, embeddings, and document indexing pipelines.
+                    Will additionally build tools to streamline client discovery.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">MySQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <!-- Experience 3 -  Widget Factory -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="/assets/idler-logo-CoRRGXCZ.png"
+                      alt="Idler / Widget Factory"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title"> AI Problem Design & Quality Assurance Engineer</h3>
+                    <h4 class="company-name">Idler / Widget Factory (YC Summer 25)</h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">February 2026 - Present</span>
+                    <span class="location">Remote</span>
+                  </div>
+                  <p class="experience-description">
+                    Designed programming and reasoning problems 
+                    to evaluate the accuracy and robustness of Idler's AI models. I analyzed their model's 
+                    outputs against reference solutions in order to identify failure patterns and 
+                    translate those findings into feedback to further improve model 
+                    performance.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <!-- Experience 4 -  IXL  -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <img
+                      src="/assets/ixl-logo-bUyI3tPC.jpeg"
+                      alt="IXL Center"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="experience-title-section">
+                    <h3 class="position-title">Technology & Digital Consultant Intern</h3>
+                    <h4 class="company-name">IXL Center - Center for Innovation, Excellence and Leadership</h4>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="date-location">
+                    <span class="date">March 2025 - May 2025</span>
+                    <span class="location">Remote</span>
+                  </div>
+                  <p class="experience-description">
+                    As a student consultant for IXL Center’s Digital Acceleration Program, 
+                    I developed a digital optimization roadmap for a small-business client 
+                    by auditing website UX, SEO structure, accessibility, scalability, and 
+                    conversion gaps. Our team translated business needs into actionable, 
+                    data-driven recommendations and ranked #1 weekly among 35+ consultant 
+                    teams.
+                  </p>
+                  <div class="tech-stack">
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="text-center mb-5 serif-regular"><em>Projects</em></h2>
+      <div class="row g-4">
+        <!-- Project 1 - Cornell Terminal -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://www.youtube.com/watch?v=uSrVDuZjRJk">Cornell Terminal</a>
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Multi-Agent Research, Analyst, and Trading Platform for the Cornell FinTech Club in collaboration with Millennium Management
+              </h6>
+              <p class="card-date text-muted"><em>September 2025 - May 2026</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="/assets/cft_x_mlp_image-C3-GZ5II.png"
+                  class="card-img-top img-fluid"
+                  alt="Cornell Terminal"
+                />
+              </div>
+              <p class="card-text">
+                Worked with 3 other programmers to build 
+                a multi-agent finance platform for Cornell FinTech Club and 
+                Millennium Management using Python, LangGraph, and Supabase, enabling 
+                natural language ticker queries to generate company research,
+                 DCF/comps valuations, risk scores, trade recommendations, and 
+                 Alpaca paper-trading backtests. Presented project in person to team of
+                 full-time senior engineers. 
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text"
+                  >Python, TypeScript, SupaBase, LangGraph, LangChain </span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 - School Scout -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://school-scout.4300showcase.infosci.cornell.edu/"
+                  >School Scout
+                  <span style="font-size: 1.5rem; color: #687079"
+                    >(Click Me!)</span
+                  ></a
+                >
+              </h5>
+              <h6 class="card-subtitle text-muted">RAG-based college search platform </h6>
+              <p class="card-date text-muted"><em>February 2026 - May 2026</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="/assets/school-scout_image-Dh226sb6.png"
+                  class="card-img-top img-fluid"
+                  alt="School Scout"
+                />
+              </div>
+              <p class="card-text">
+                Developed School Scout, a RAG-based college search platform that
+                 combines scraped Niche.com review data, SVD/vector retrieval, 
+                 structured filters, and an interactive map interface to rank 
+                 schools from natural-language queries. Built a SQLite database to 
+                 store the Niche.com review data through BeautifulSoup web scraping
+                 across 500+ universities and colleges.
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text"
+                  >Python, JavaScript, React, SQL, SQLite, Docker, NumPy, Pandas</span
+                ><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 - Personal Website -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://github.com/gregparent21/gregparent21.github.io"
+                  >Personal Website</a
+                >
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Personal Website to display portfolio, resume, and work experience 
+              </h6>
+              <p class="card-date text-muted"><em>August 2025 - Current</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="/assets/website_image-CjE883iS.png"
+                  class="card-img-top img-fluid"
+                  alt="Personal Website Portfolio"
+                />
+              </div>
+              <p class="card-text">
+                Designed and developed a responsive personal portfolio website using HTML and CSS
+                 to showcase my projects, technical experience, resume, and contact information 
+                 through a clean, accessible interface.
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text">JavaScript, React, HTML, CSS</span><br />
+                
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 - Portfolio Optimizer -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://youtu.be/I9aEHHa18fY">Portfolio Optimizer</a>
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Portfolio Optimizer
+              </h6>
+              <p class="card-date text-muted"><em>January 2025 - May 2025</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="/assets/port-opt-image-C0TSgQcv.png"
+                  class="card-img-top img-fluid"
+                  alt="Port Opt"
+                />
+              </div>
+              <p class="card-text">
+                Led backend development for a portfolio optimization platform using Python,
+                 Flask, PostgreSQL, yfinance, and BeautifulSoup, scraping top GICS-sector tickers,
+                  storing 1M+ OHLC records, and enabling real-time analysis and optimization across 
+                  500+ stocks. User enters their current portfolio, as well as survey answers regarding
+                  preferred sectors, comfort with risk, and investment time horizon to determine optimization method.
+                <br /><br /><br />
+                Tech Stack: <span class="light-bold-text">Python, PostgreSQL, JavaScript, TypeScript, Firebase</span
+                ><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 - CamlShop -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://www.youtube.com/watch?v=EQ_Qw3f65I8&list=LL&index=34">CamlShop</a>
+              </h5>
+              <h6 class="card-subtitle text-muted">
+                Image editing tool built entirely with OCaml
+              </h6>
+              <p class="card-date text-muted"><em>October 2025 - December 2025</em></p>
+              <div class="custom-image-container container">
+                <img
+                  src="/assets/camlshop-image-BeSwBtvt.png"
+                  class="card-img-top img-fluid"
+                  alt="CamlShop"
+                />
+              </div>
+              <p class="card-text">
+                Built an OCaml-based image editing application with support for color filters, 
+                rotation, mirroring, cropping, cut-and-paste editing, and file saving. The project 
+                emphasized functional programming design, image manipulation algorithms, and a clean 
+                user workflow for loading, editing, and exporting images.
+
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text">OCaml</span><br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 - AstraGlyph -->
+        <div class="col-xl-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://astgra-glyph.vercel.app/">AstraGlyph</a></h5>
+              <p class="card-date text-muted"><em>April 2026 - May 2026</em></p>
+              <h6 class="card-subtitle text-muted">
+                Translation tool for my own invented language
+              </h6>
+              <div class="custom-image-container container">
+                <img
+                  src="/assets/astraglyph-image-CkaoHHiV.png"
+                  class="card-img-top img-fluid"
+                  alt="AstraGlyph"
+                />
+              </div>
+              <p class="card-text">
+                Final project for Cornell's ARKEO 2812: Hieroglyphics to HTML - A History of Writing Systems.
+                Opted to create my own language and went above expectations by building my own translation 
+                platform to translate English text into my script in real time. Language consists of both
+                phonetic letters and logograms. Translation works by breaking down English words into phonetic
+                chunks to decide which character to substitute. 
+                <br /><br />
+                Tech Stack:
+                <span class="light-bold-text"
+                  >JavaScript, React Native</span
+                ><br /> <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="skills">
+      <h2 class="text-center mb-5" style="color: var(--background-color)">
+        <em>Technical Skills</em>
+      </h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <h5 class="mb-3">Languages</h5>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2020%2020'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3epython%20[%23127]%3c/title%3e%3cdesc%3eCreated%20with%20Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='Dribbble-Light-Preview'%20transform='translate(-340.000000,%20-7599.000000)'%20fill='%23191a1b'%3e%3cg%20id='icons'%20transform='translate(56.000000,%20160.000000)'%3e%3cpath%20d='M296.744,7457.45798%20C296.262,7457.45798%20295.872,7457.06594%20295.872,7456.58142%20C295.872,7456.0969%20296.262,7455.70587%20296.744,7455.70587%20C297.226,7455.70587%20297.616,7456.0969%20297.616,7456.58142%20C297.616,7457.06594%20297.226,7457.45798%20296.744,7457.45798%20M294.072,7459%20C299.15,7459%20298.833,7456.78649%20298.833,7456.78649%20L298.827,7454.49357%20L293.982,7454.49357%20L293.982,7453.80499%20L300.751,7453.80499%20C300.751,7453.80499%20304,7454.17591%20304,7449.02614%20C304,7443.87636%20301.165,7444.0583%20301.165,7444.0583%20L299.472,7444.0583%20L299.472,7446.44873%20C299.472,7446.44873%20299.563,7449.29855%20296.682,7449.29855%20L291.876,7449.29855%20C291.876,7449.29855%20289.176,7449.25533%20289.176,7451.9222%20L289.176,7456.33112%20C289.176,7456.33112%20288.766,7459%20294.072,7459%20M291.257,7440.54202%20C291.739,7440.54202%20292.128,7440.93406%20292.128,7441.41858%20C292.128,7441.9031%20291.739,7442.29413%20291.257,7442.29413%20C290.775,7442.29413%20290.385,7441.9031%20290.385,7441.41858%20C290.385,7440.93406%20290.775,7440.54202%20291.257,7440.54202%20M293.928,7439%20C288.851,7439%20289.168,7441.21351%20289.168,7441.21351%20L289.174,7443.50643%20L294.019,7443.50643%20L294.019,7444.19501%20L287.249,7444.19501%20C287.249,7444.19501%20284,7443.82409%20284,7448.97386%20C284,7454.12364%20286.836,7453.9417%20286.836,7453.9417%20L288.528,7453.9417%20L288.528,7451.55127%20C288.528,7451.55127%20288.437,7448.70145%20291.319,7448.70145%20L296.124,7448.70145%20C296.124,7448.70145%20298.824,7448.74467%20298.824,7446.0778%20L298.824,7441.66888%20C298.824,7441.66888%20299.234,7439%20293.928,7439'%20id='python-[%23127]'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+                  alt="Python"
+                  class="img-fluid"
+                />
+                <p>Python</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23191a1b'%20viewBox='6%203%2020%2026'%3e%3cpath%20d='M%2017.625%203%20C%2019.027344%206.308594%2012.597656%208.335938%2012%2011.09375%20C%2011.453125%2013.625%2015.808594%2016.59375%2015.8125%2016.59375%20C%2015.148438%2015.546875%2014.664063%2014.664063%2014%2013.03125%20C%2012.875%2010.273438%2020.855469%207.785156%2017.625%203%20Z%20M%2021.875%207.59375%20C%2021.875%207.59375%2016.253906%207.949219%2015.96875%2011.625%20C%2015.839844%2013.261719%2017.453125%2014.121094%2017.5%2015.3125%20C%2017.539063%2016.285156%2016.53125%2017.09375%2016.53125%2017.09375%20C%2016.53125%2017.09375%2018.339844%2016.765625%2018.90625%2015.28125%20C%2019.53125%2013.632813%2017.6875%2012.507813%2017.875%2011.1875%20C%2018.054688%209.925781%2021.875%207.59375%2021.875%207.59375%20Z%20M%2023.25%2016.0625%20C%2022.660156%2016.035156%2021.996094%2016.253906%2021.40625%2016.6875%20C%2022.570313%2016.429688%2023.5625%2017.160156%2023.5625%2018%20C%2023.5625%2019.882813%2020.875%2021.65625%2020.875%2021.65625%20C%2020.875%2021.65625%2025.03125%2021.191406%2025.03125%2018.09375%20C%2025.03125%2016.816406%2024.230469%2016.109375%2023.25%2016.0625%20Z%20M%2012.21875%2016.09375%20C%2010.769531%2016.144531%207.875%2016.382813%207.875%2017.5%20C%207.875%2019.054688%2014.617188%2019.175781%2019.4375%2018.21875%20C%2019.4375%2018.21875%2020.75%2017.304688%2021.09375%2016.96875%20C%2017.933594%2017.625%2010.71875%2017.726563%2010.71875%2017.15625%20C%2010.71875%2016.632813%2013.03125%2016.09375%2013.03125%2016.09375%20C%2013.03125%2016.09375%2012.703125%2016.078125%2012.21875%2016.09375%20Z%20M%2011.78125%2018.96875%20C%2010.988281%2018.96875%209.8125%2019.585938%209.8125%2020.1875%20C%209.8125%2021.398438%2015.78125%2022.328125%2020.1875%2020.5625%20L%2018.65625%2019.625%20C%2015.667969%2020.601563%2010.148438%2020.277344%2011.78125%2018.96875%20Z%20M%2012.53125%2021.6875%20C%2011.449219%2021.6875%2010.75%2022.371094%2010.75%2022.875%20C%2010.75%2024.425781%2017.214844%2024.578125%2019.78125%2023%20L%2018.15625%2021.9375%20C%2016.242188%2022.761719%2011.425781%2022.882813%2012.53125%2021.6875%20Z%20M%208.90625%2023.09375%20C%207.140625%2023.058594%206%2023.859375%206%2024.53125%20C%206%2028.105469%2024.09375%2027.933594%2024.09375%2024.28125%20C%2024.09375%2023.675781%2023.378906%2023.386719%2023.125%2023.25%20C%2024.601563%2026.742188%208.34375%2026.46875%208.34375%2024.40625%20C%208.34375%2023.9375%209.546875%2023.46875%2010.65625%2023.6875%20L%209.71875%2023.15625%20C%209.441406%2023.113281%209.160156%2023.097656%208.90625%2023.09375%20Z%20M%2026%2025.5%20C%2023.25%2028.160156%2016.289063%2029.113281%209.28125%2027.46875%20C%2016.289063%2030.398438%2025.964844%2028.769531%2026%2025.5%20Z'%3e%3c/path%3e%3c/svg%3e"
+                  alt="Java"
+                  class="img-fluid"
+                />
+                <p>Java</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2020%2020'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3ejavascript%20[%23155]%3c/title%3e%3cdesc%3eCreated%20with%20Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='Dribbble-Light-Preview'%20transform='translate(-420.000000,%20-7479.000000)'%20fill='%23191a1b'%3e%3cg%20id='icons'%20transform='translate(56.000000,%20160.000000)'%3e%3cpath%20d='M379.328,7337.432%20C377.583,7337.432%20376.455,7336.6%20375.905,7335.512%20L375.905,7335.512%20L377.435,7334.626%20C377.838,7335.284%20378.361,7335.767%20379.288,7335.767%20C380.066,7335.767%20380.563,7335.378%20380.563,7334.841%20C380.563,7334.033%20379.485,7333.717%20378.724,7333.391%20C377.368,7332.814%20376.468,7332.089%20376.468,7330.558%20C376.468,7329.149%20377.542,7328.075%20379.221,7328.075%20C380.415,7328.075%20381.275,7328.491%20381.892,7329.578%20L380.429,7330.518%20C380.107,7329.941%20379.758,7329.713%20379.221,7329.713%20C378.67,7329.713%20378.321,7330.062%20378.321,7330.518%20C378.321,7331.082%20378.67,7331.31%20379.476,7331.659%20C381.165,7332.383%20382.443,7332.952%20382.443,7334.814%20C382.443,7336.506%20381.114,7337.432%20379.328,7337.432%20L379.328,7337.432%20Z%20M375,7334.599%20C375,7336.546%20373.801,7337.575%20372.136,7337.575%20C370.632,7337.575%20369.731,7337%20369.288,7336%20L369.273,7336%20L369.266,7336%20L369.262,7336%20L370.791,7334.931%20C371.086,7335.454%20371.352,7335.825%20371.996,7335.825%20C372.614,7335.825%20373,7335.512%20373,7334.573%20L373,7328%20L375,7328%20L375,7334.599%20Z%20M364,7339%20L384,7339%20L384,7319%20L364,7319%20L364,7339%20Z'%20id='javascript-[%23155]'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+                  alt="JavaScript"
+                  class="img-fluid"
+                />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/sql-icon-bw-fSXuOxFi.jpg"
+                  alt="SQL"
+                  class="img-fluid"
+                />
+                <p>SQL</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='800px'%20height='800px'%20viewBox='-1%200%2020%2020'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3ehtml%20[%23124]%3c/title%3e%3cdesc%3eCreated%20with%20Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='Dribbble-Light-Preview'%20transform='translate(-61.000000,%20-7639.000000)'%20fill='%23191a1b'%3e%3cg%20id='icons'%20transform='translate(56.000000,%20160.000000)'%3e%3cpath%20d='M19.4350881,7485%20L19.4279481,7485%20L10.8119794,7485%20L11.0180201,7487%20L19.2300674,7487%20C19.109707,7488.752%2018.7455658,7492.464%2018.6119454,7494.153%20L13.99949,7495.451%20L13.99949,7495.455%20L13.98929,7495.46%20L9.37377458,7493.836%20L9.05757353,7490%20L11.3199411,7490%20L11.4800816,7492.063%20L13.99337,7493%20L13.99949,7493%20L16.5086984,7492.1%20L16.7667592,7489%20L8.95659319,7489%20C8.91885306,7488.599%208.43333144,7483.392%208.34867116,7483%20L19.6370488,7483%20C19.5738086,7483.66%2019.5095484,7484.338%2019.4350881,7485%20L19.4350881,7485%20Z%20M5,7479%20L6.63812546,7497.148%20L13.98929,7499%20L21.3598345,7497.111%20L23,7479%20L5,7479%20Z'%20id='html-[%23124]'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+                  alt="HTML"
+                  class="img-fluid"
+                />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/ocaml-icon-CbyLfVxL.webp"
+                  alt="OCaml"
+                  class="img-fluid"
+                />
+                <p>OCaml</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Frameworks</h5>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='-11.5%20-10.23174%2023%2020.46348'%3e%3ctitle%3eReact%20Logo%3c/title%3e%3ccircle%20cx='0'%20cy='0'%20r='2.05'%20fill='%23191a1b'/%3e%3cg%20stroke='%23191a1b'%20stroke-width='1'%20fill='none'%3e%3cellipse%20rx='11'%20ry='4.2'/%3e%3cellipse%20rx='11'%20ry='4.2'%20transform='rotate(60)'/%3e%3cellipse%20rx='11'%20ry='4.2'%20transform='rotate(120)'/%3e%3c/g%3e%3c/svg%3e"
+                  alt="React"
+                  class="img-fluid"
+                />
+                <p>React</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/webp;base64,UklGRi4GAABXRUJQVlA4TCEGAAAvK8FKECcQEQKBFG52EQPs2nbqRmCnAJy4AJKhgDwowAb6L2piQLoS/pyJ6L9D27apatPdidzjyFt9gDkp8+8//v3H37lw98/nU1SZz+fnYaWvvD5FqYkP0bNcNBuxk98z7eYqcvVdBjBB4MhlCBMnMHwZxmDtq5SBLPYYyiJ9B7O42IazIsdZ/Gkq5YzsqwxpVlgMZxMmj4qAuDboJf61E7qURkbg8dDE4jOiZxnczOS/GB2R7j88Yf3jdVke7zG8oRzsQDk4ATk2elZpSPIAvfkhaUeozY/YChcqLoPV7hHo1kZxscYsd1jEiQx19futMU+BCexQpXHTVD8/qJLZTjJRcOLnnacC4UywKiKLH4C0BojuV0K9NUDBtohCbQk9B11V84vtTMBmWlmbn7mPBbSVlmzyYd1bwPNgKNh0dY8c07lB+1nKBik7z5nobS/JyLN759Ykv+dVEeCesjT7o24mVmDL7hFoGoCF7qRcsJWTkwkbFk6YU1c9T5oH92Gw1HGhKD/7+nEcIQsYuyhnQk4wKkKPnnHwSrgUVkAmZvOjxUks6TM34MaAP2h36Tcrstx3brSAzJpv/RU/fnLs36yES+TeyOmIbdT/TFL9uSeuMEWuyqtkz7jA3AYzAwuTxaQtGGGayBX1xOuuPCETWsJUVxlQgIqylSFCm4bECkrZTCAJn6wQFyNKU6U/KCKo+7gaSbrV6ktEeElEQyH4iLgEgqi8waiXgkcf/psjSRuKFaO11WYTIgiMlq6U6SkGdN6mQJD1wupizJvcDHzCjvLyepSVIFRSB4+tMqocce38Y+Gyoxp2GiGfN1frc+8nhaxHWGkRodU0MfVlrdY0pCFCtoOurCt3DgOEKLJiuJoOurJa7kJMloTJwFqsNWjvqarIolCxAR+23LCpM4eBAnqg7CCSTlWZry9tbVUlnTA7gJ9rQ0B79OgwHcJr0R6gvnzEsyG7a6pq1wqT+VxiQwexIaplrGXgR23kwHxutGgNYVKL9W6fcYi5A9t17g3WvE8lAeYO5kqExowGhlG3RTqegGmWKvG+Ft43mAlkVPip+txWZKrbAAhHHBhOwNyBbUhoOzW/CswMJ8edeyK7DnYdWA3dCZg7CC20mQ3BgIwpgq5AU6MbRWFOv06gt8IuLbb7SK2NnyZzsctvYfNkxaW+enwTuxqsDKL6eNJAGDnU2Iq8RyLiScjgPQCHZRfgKpWlYyP2IBJBlamBZ1GEGecxk7IhfMW7EO7hrDBo2EhKLI8Eqfe6oN4hRdqp2EiKmTsMtTpfRRlWhgdq7nBGTrhBF6kizMNSEQ0aCgLTQJc6oYrOXhRQpsBRhFaLcqM3wZAgM9R9OSz2y0fyRCDSK27W+pF4XelIuZGpZSHBlO6KBsokENkDG9WsYTy6U2TbJbngh84BCE9jh0qcGjxJSc8k3pHTFk91KFXKYcxZhJOvwB1tzY/E2KIsAMftrlwqWWBMH2/g4bnO0FXRhOZQSYnHXsk7kZ11pXi0txbjQuIDHpVvKy227E6s49+5fKyBcX8wDcUhbbkxJHg0iFNDwLk0ekBwlHo9r2l3+jgMzwEnaLce9iW2SlGgZcGFxkgfAY/1WANOx7JNX0mIktwsI+gbt84mqEgby9wktzg0FQi+MVcq6O4KYna1ErQtFXFWA8mVMluXWJE80T1HfKShzk97TD1jNeghtp/HgjM2Xh/5q8IazUIQiM/fVeg19wDO2etXd8uy/Or7fT9KnZsJv98PIw/q6T2LLQk5cH9uP2Rw6q2N/bwzIVvtb4qWXArYjXRO987j+bCHveiQD9xkgRUhqPNdKe/V/0RI0v4yXkeZrC2t6/J9QhubfTdtwLdEIc3u94hu+d5uvwU6TOap/g1Bz4+oii6Xx6uEqpZ5D/DqaUK/vZZGeU3Xg+uNl9qX5UUpLp+B3pV/luHNdFpvyp8SzSf1BYbz+lrFGVE436+gmF0b4JP153MpntmXiM7n0u20vnB1RjZazOfcBjxO6ytzKDtcDGdkb6f1pUeszUPGdhZ/+mONgLnrv3ozQuah/Ox7Vewka8XnJv554cdb3xePP1drTsr8+49///FnLgwA"
+                  alt="LangChain / LangGraph"
+                  class="img-fluid"
+                />
+                <p>LangChain</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/flask-icon-C9ieZI7N.webp"
+                  alt="Flask"
+                  class="img-fluid"
+                />
+                <p>Flask</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/numpy-icon-B9A27pHd.webp"
+                  alt="NumPy"
+                  class="img-fluid"
+                />
+                <p>NumPy</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/webp;base64,UklGRu4AAABXRUJQVlA4TOEAAAAv78A7ECcQMQFE2ra5qRidtsMH+CY4iCRJke5OARmgN0AK/te/rL2OiamnpYj+M2zbxhG9wH29fgN0X2LGPZ4Z5BriefQczxNhSEc8/fqsufr1GXP1yJrftj2enmN8hXgWjjWcuGTq1CqVQK1SCdRLSEfkeToAeV4SQH0ZCgbc+pfb3uC2Jwt4xvN0rhjPSyKISZLk/QsA8n4NAjE/MLX+JVDbG+3B8dhyAbf+5bY3uO3JdEQ+jxFAPn+SQEwGzdU8nTFX85IAaiEb3tR5OgJ1XtIX26Qy1r8+T7H+9X2H6QAA"
+                  alt="Pandas"
+                  class="img-fluid"
+                />
+                <p>Pandas</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/pytorch-Ci0OMGvm.png"
+                  alt="PyTorch"
+                  class="img-fluid"
+                />
+                <p>PyTorch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Tools & Databases</h5>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%20width='50px'%20height='50px'%3e%3cpath%20fill='%23191a1b'%20d='M%2046.792969%2022.089844%20L%2027.910156%203.207031%20C%2027.109375%202.402344%2026.054688%202%2025%202%20C%2023.945313%202%2022.890625%202.402344%2022.089844%203.207031%20L%2018.355469%206.941406%20L%2022.976563%2011.5625%20C%2024.511719%2010.660156%2026.511719%2010.855469%2027.828125%2012.171875%20C%2029.144531%2013.488281%2029.335938%2015.488281%2028.433594%2017.019531%20L%2032.976563%2021.5625%20C%2034.511719%2020.660156%2036.511719%2020.855469%2037.828125%2022.171875%20C%2039.390625%2023.734375%2039.390625%2026.265625%2037.828125%2027.828125%20C%2036.265625%2029.390625%2033.734375%2029.390625%2032.171875%2027.828125%20C%2030.855469%2026.511719%2030.660156%2024.511719%2031.5625%2022.976563%20L%2027.019531%2018.433594%20C%2026.695313%2018.625%2026.355469%2018.765625%2026%2018.855469%20L%2026%2031.140625%20C%2027.722656%2031.585938%2029%2033.136719%2029%2035%20C%2029%2037.210938%2027.210938%2039%2025%2039%20C%2022.789063%2039%2021%2037.210938%2021%2035%20C%2021%2033.136719%2022.277344%2031.585938%2024%2031.140625%20L%2024%2018.855469%20C%2023.332031%2018.683594%2022.695313%2018.351563%2022.171875%2017.828125%20C%2020.855469%2016.511719%2020.664063%2014.511719%2021.566406%2012.980469%20L%2016.941406%208.355469%20L%203.207031%2022.089844%20C%201.597656%2023.695313%201.597656%2026.304688%203.207031%2027.910156%20L%2022.089844%2046.792969%20C%2022.890625%2047.597656%2023.945313%2048%2025%2048%20C%2026.054688%2048%2027.109375%2047.597656%2027.910156%2046.792969%20L%2046.792969%2027.910156%20C%2048.402344%2026.304688%2048.402344%2023.695313%2046.792969%2022.089844%20Z'/%3e%3c/svg%3e"
+                  alt="Git"
+                  class="img-fluid"
+                />
+                <p>Git</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/sqlite-icon-D0qCWXWb.webp"
+                  alt="SQLite"
+                  class="img-fluid"
+                />
+                <p>SQLite</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%20width='48px'%20height='48px'%3e%3cpath%20fill='%23191a1b'%20d='M%2022.5%206%20C%2022.224%206%2022%206.224%2022%206.5%20L%2022%209.5%20C%2022%209.776%2022.224%2010%2022.5%2010%20L%2025.5%2010%20C%2025.776%2010%2026%209.776%2026%209.5%20L%2026%206.5%20C%2026%206.224%2025.776%206%2025.5%206%20L%2022.5%206%20z%20M%2010.5%2012%20C%2010.224%2012%2010%2012.224%2010%2012.5%20L%2010%2015.5%20C%2010%2015.776%2010.224%2016%2010.5%2016%20L%2013.5%2016%20C%2013.776%2016%2014%2015.776%2014%2015.5%20L%2014%2012.5%20C%2014%2012.224%2013.776%2012%2013.5%2012%20L%2010.5%2012%20z%20M%2016.5%2012%20C%2016.224%2012%2016%2012.224%2016%2012.5%20L%2016%2015.5%20C%2016%2015.776%2016.224%2016%2016.5%2016%20L%2019.5%2016%20C%2019.776%2016%2020%2015.776%2020%2015.5%20L%2020%2012.5%20C%2020%2012.224%2019.776%2012%2019.5%2012%20L%2016.5%2012%20z%20M%2022.5%2012%20C%2022.224%2012%2022%2012.224%2022%2012.5%20L%2022%2015.5%20C%2022%2015.776%2022.224%2016%2022.5%2016%20L%2025.5%2016%20C%2025.776%2016%2026%2015.776%2026%2015.5%20L%2026%2012.5%20C%2026%2012.224%2025.776%2012%2025.5%2012%20L%2022.5%2012%20z%20M%2037.478516%2014.300781%20L%2037.025391%2014.951172%20C%2036.458391%2015.825172%2036.045734%2016.787828%2035.802734%2017.798828%20C%2035.343734%2019.731828%2035.621422%2021.546656%2036.607422%2023.097656%20C%2035.416422%2023.758656%2033.386%2023.986%2033%2024%20L%202%2024%20C%200.895%2024%200%2024.895%200%2026%20C%200%2028%200.43371875%2030.924625%201.3867188%2033.515625%20C%202.4757187%2036.359625%204.0970781%2038.454328%206.2050781%2039.736328%20C%208.5670781%2041.177328%2012.404859%2042%2016.755859%2042%20C%2018.720859%2042.006%2020.683234%2041.828703%2022.615234%2041.470703%20C%2025.301234%2040.979703%2027.885719%2040.045078%2030.261719%2038.705078%20C%2032.219719%2037.576078%2033.981469%2036.139172%2035.480469%2034.451172%20C%2037.985469%2031.627172%2039.477891%2028.4815%2040.587891%2025.6875%20C%2040.592891%2025.6845%2040.596562%2025.683688%2040.601562%2025.679688%20C%2043.598562%2025.800687%2045.412625%2024.642688%2046.390625%2023.679688%20C%2047.008625%2023.095688%2047.491688%2022.38275%2047.804688%2021.59375%20L%2048%2021.021484%20L%2047.527344%2020.650391%20C%2047.397344%2020.547391%2046.182141%2019.632812%2043.619141%2019.632812%20C%2042.942141%2019.635813%2042.266609%2019.694641%2041.599609%2019.806641%20C%2041.103609%2016.421641%2038.293969%2014.769313%2038.167969%2014.695312%20L%2037.478516%2014.300781%20z%20M%204.5%2018%20C%204.224%2018%204%2018.224%204%2018.5%20L%204%2021.5%20C%204%2021.776%204.224%2022%204.5%2022%20L%207.5%2022%20C%207.776%2022%208%2021.776%208%2021.5%20L%208%2018.5%20C%208%2018.224%207.776%2018%207.5%2018%20L%204.5%2018%20z%20M%2010.5%2018%20C%2010.224%2018%2010%2018.224%2010%2018.5%20L%2010%2021.5%20C%2010%2021.776%2010.224%2022%2010.5%2022%20L%2013.5%2022%20C%2013.776%2022%2014%2021.776%2014%2021.5%20L%2014%2018.5%20C%2014%2018.224%2013.776%2018%2013.5%2018%20L%2010.5%2018%20z%20M%2016.5%2018%20C%2016.224%2018%2016%2018.224%2016%2018.5%20L%2016%2021.5%20C%2016%2021.776%2016.224%2022%2016.5%2022%20L%2019.5%2022%20C%2019.776%2022%2020%2021.776%2020%2021.5%20L%2020%2018.5%20C%2020%2018.224%2019.776%2018%2019.5%2018%20L%2016.5%2018%20z%20M%2022.5%2018%20C%2022.224%2018%2022%2018.224%2022%2018.5%20L%2022%2021.5%20C%2022%2021.776%2022.224%2022%2022.5%2022%20L%2025.5%2022%20C%2025.776%2022%2026%2021.776%2026%2021.5%20L%2026%2018.5%20C%2026%2018.224%2025.776%2018%2025.5%2018%20L%2022.5%2018%20z%20M%2028.5%2018%20C%2028.224%2018%2028%2018.224%2028%2018.5%20L%2028%2021.5%20C%2028%2021.776%2028.224%2022%2028.5%2022%20L%2031.5%2022%20C%2031.776%2022%2032%2021.776%2032%2021.5%20L%2032%2018.5%20C%2032%2018.224%2031.776%2018%2031.5%2018%20L%2028.5%2018%20z'/%3e%3c/svg%3e"
+                  alt="Docker"
+                  class="img-fluid"
+                />
+                <p>Docker</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="/assets/postgres-logo-BTdM5BFu.jpg"
+                  alt="PostgreSQL"
+                  class="img-fluid"
+                />
+                <p>PostgreSQL</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%201024%201024'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='512'%20cy='512'%20r='512'%20style='fill:%23191a1b'/%3e%3cpath%20d='M648.86%20449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93%2012.65-1.41%2017.53-13.37%2030.29-18.52%2014.48-113.54%2094.21-121.27%20256.37-7.21%20151.24%20109.25%20241.36%20125%20252.85l1.79%201.27v-.11c.1.76%205%2036%208.44%2073.34H526a726.68%20726.68%200%200%201%2013-78.53l1-.65a204.48%20204.48%200%200%200%2020.11-16.45l.72-.65c33.48-30.93%2093.67-102.47%2093.08-216.53a347.07%20347.07%200%200%200-5.05-56.76zM512.35%20659.12s0-212.12%207-212.08c5.46%200%2012.53%20273.61%2012.53%20273.61-9.72-1.17-19.53-45.03-19.53-61.53z'%20style='fill:%23f1f1f1'/%3e%3c/svg%3e"
+                  alt="MongoDB"
+                  class="img-fluid"
+                />
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="skill-item">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24px'%20height='24px'%3e%3cpath%20fill='%23191a1b'%20d='M8.56%204.94l-6.02%2010.4L5.545%201.147C5.642.69%206.257.603%206.476%201.016L8.56%204.94zM9.67%207.02L10.87%209.27%205.34%2014.5zM14.16%206.15l-1.79%201.7-1.52-2.86.973-1.674c.198-.341.694-.329.876.021L14.16%206.15zM21.13%2018.74l-8.8%205.12C12.18%2023.96%2012%2024%2011.83%2024c-.17%200-.35-.04-.5-.13l-8.05-4.65L18.647%204.657c.291-.276.771-.114.837.281L21.61%2017.71C21.68%2018.12%2021.49%2018.53%2021.13%2018.74z'/%3e%3c/svg%3e"
+                  alt="Firebase"
+                  class="img-fluid"
+                />
+                <p>Firebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Gregory Parent</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Modal Image -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.getElementsByClassName("custom-close")[0];
+        const navbar = document.querySelector(".navbar");
+
+        document
+          .querySelectorAll("#projects .custom-image-container img")
+          .forEach((img) => {
+            img.addEventListener("click", function () {
+              modal.style.display = "flex";
+              modalImg.src = this.src;
+              navbar.classList.add("navbar-hidden");
+            });
+          });
+
+        closeBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+          navbar.classList.remove("navbar-hidden");
+        });
+
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+            navbar.classList.remove("navbar-hidden");
+          }
+        });
+      });
+    </script>
+    <div id="imageModal" class="modal">
+      <span class="custom-close">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Zoomed Image" />
+      </div>
+    </div>
   </body>
 </html>
